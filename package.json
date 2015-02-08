@@ -1,12 +1,16 @@
 {
   "name": "polymer-expressions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Polymer filters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbarinov/polymer-filters.git"
+  },
   "main": "karma.conf.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run"
   },
-  "author": "",
+  "author": "Maxim Barinov <barinovmaxim@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "graceful-fs": "3.0.5",
