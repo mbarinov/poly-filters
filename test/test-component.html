@@ -1,0 +1,21 @@
+<polymer-element name="test-component"
+                 attributes="value result">
+    <template>
+        <div id="container"></div>
+        <content id="content" select="span"></content>
+    </template>
+    <script>
+        Polymer('test-component',{
+            publish: {
+                result: null
+            },
+            domReady: function () {
+                this.tests = this.$.content.getDistributedNodes();
+                if(this.tests) {
+                    this.injectBoundHTML(this.tests[0].innerHTML, this.$.container);
+                    this.result = this.$.container.outerText;
+                }
+            }
+        });
+    </script>
+</polymer-element>
