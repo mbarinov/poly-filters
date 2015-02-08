@@ -11,7 +11,6 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'bower_components/webcomponentsjs/webcomponents.min.js',
             'bower_components/polymer/polymer.js',
             'test/karma-loader.js',
 
@@ -51,7 +50,16 @@ module.exports = function (config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS_custom'],
+        customLaunchers: {
+            'PhantomJS_custom': {
+                base: 'PhantomJS',
+                options: {
+                    windowName: 'Window'
+                },
+                flags: ['--remote-debugger-port=9000']
+            }
+        },
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
