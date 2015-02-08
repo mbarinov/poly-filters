@@ -3,21 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "karma.conf.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+    "test": "./node_modules/karma/bin/karma start --single-run"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "graceful-fs": "3.0.5",
     "karma": "0.12.31",
+    "karma-chrome-launcher": "0.1.7",
     "karma-mocha": "0.1.10",
     "karma-phantomjs-launcher": "0.1.4",
     "karma-should": "0.0.1",
     "mocha": "2.1.0",
-    "should": "4.6.5",
-    "graceful-fs": "3.0.5"
+    "should": "4.6.5"
   }
 }
