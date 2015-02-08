@@ -20,3 +20,6 @@ bower_components
 
 # Idea config files
 .idea
+
+# Coverage
+coverage
