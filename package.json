@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "karma": "^0.12.31",
+    "karma": "0.12.31",
     "karma-mocha": "0.1.10",
-    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-phantomjs-launcher": "0.1.4",
     "karma-should": "0.0.1",
-    "mocha": "^2.1.0",
-    "should": "^4.6.5"
+    "mocha": "2.1.0",
+    "should": "4.6.5"
   }
 }
