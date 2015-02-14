@@ -1,10 +1,10 @@
 {
-  "name": "poly-filters",
+  "name": "poly -filters",
   "version": "1.0.0",
   "description": "Polymer filters",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbarinov/polymer-filters.git"
+    "url": "https://github.com/mbarinov/poly-filters.git"
   },
   "main": "karma.conf.js",
   "scripts": {
