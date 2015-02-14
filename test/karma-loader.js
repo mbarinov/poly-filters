@@ -23,4 +23,6 @@ window.initTemplate = function(template) {
     '</test-component>';
 
     document.body.appendChild(el);
+
+    return el;
 };
