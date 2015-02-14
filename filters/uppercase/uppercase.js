@@ -1,3 +1,7 @@
 PolymerExpressions.prototype.uppercase = function (input) {
-    return input.toUpperCase();
+    if(typeof input === 'string') {
+        return input.toUpperCase();
+    } else {
+        return input;
+    }
 };
