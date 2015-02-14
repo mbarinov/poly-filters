@@ -4,6 +4,6 @@
   <img src="https://travis-ci.org/mbarinov/polymer-filters.svg" data-bindattr-857="857" title="Build Status Images">
 </a>
 
-`npm install polymer-filters --save-dev`
+`bower install poly-filters`
 
 Extending Polymer expressions.
