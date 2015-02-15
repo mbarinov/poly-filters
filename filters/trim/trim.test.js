@@ -19,7 +19,7 @@ describe('Trim test', function () {
 
     it('Incorrect input', function (done) {
         var el = document.querySelector('test-component');
-        el.setAttribute('value', 123);
+        el.value = 123;
 
         setTimeout(function () {
             el.result.should.equal('123');
