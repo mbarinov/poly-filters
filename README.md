@@ -8,9 +8,8 @@
 
 This library is a range of useful filters for Polymer expressions.
 
-`{{ 'Hello world' | uppercase }}
-> HELLO WORLD
-`
+`{{ 'Hello world' | uppercase }}`
+> HELLO WORLD`
 
 ## Filters:
 
