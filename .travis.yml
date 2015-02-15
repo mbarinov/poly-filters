@@ -7,8 +7,15 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-addons:
-  code_climate:
-    repo_token: 4f0d28dcf42f85e76c87593f3aa94573a0ff2189957421eadaa8b52e31700e54
-after_script:
-  - cat coverage/lcov.info | codeclimate
+
+env:
+  CODECLIMATE_REPO_TOKEN: 4f0d28dcf42f85e76c87593f3aa94573a0ff2189957421eadaa8b52e31700e54
+
+before_script:
+- npm install -g istanbul
+- npm install -g mocha
+- npm install -g codeclimate-test-reporter
+
+after_success:
+  - istanbul cover _mocha -- -R spec ./filters/**/*.js
+  - codeclimate < ./coverage/lcov.info
