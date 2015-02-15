@@ -1,4 +1,4 @@
-describe.only('Array filter', function () {
+describe('Array filter', function () {
 
     var tmpl = '<span>{{ value | arrayFilter(format, prop, true) }}</span>';
 
