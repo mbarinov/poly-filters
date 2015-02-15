@@ -20,7 +20,7 @@ describe('Date test', function () {
 
     it('format test yyyy-MM-dd HH:mm:ss Z', function (done) {
         var el = document.querySelector('test-component');
-        el.value = '2012-01-02';
+        el.value = '2012-01-02 07:00';
         el.format = 'yyyy-MM-dd HH:mm:ss Z';
 
         setTimeout(function() {
