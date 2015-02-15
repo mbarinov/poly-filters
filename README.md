@@ -6,4 +6,22 @@
 
 `bower install poly-filters`
 
-Extending Polymer expressions.
+This library is a range of useful filters for Polymer expressions.
+
+`{{ 'Hello world' | uppercase }}
+> HELLO WORLD
+`
+
+## Filters:
+
+* Uppercase
+* Lowercase
+* Trim
+* Round
+* Reverse
+* Length
+* Parsing link
+* Date
+* Array filter
+
+[Documentation](http://mbarinov.github.io/poly-filters/)
