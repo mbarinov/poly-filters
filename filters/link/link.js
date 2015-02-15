@@ -3,7 +3,7 @@ PolymerExpressions.prototype.link = function (input, format) {
     a.href = input;
 
     if (format === 'domain') {
-        parts = a['hostname'].split('.');
+        parts = a.hostname.split('.');
         if (parts[1]) {
             return parts.slice(1, parts.length).join('.');
         }
