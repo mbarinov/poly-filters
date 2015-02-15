@@ -14,9 +14,9 @@ PolymerExpressions.prototype.arrayFilter = function(input, prop, value, test) {
     }
 
     if(test) {
-        return JSON.stringify(result || input);
+        return JSON.stringify(result);
     } else {
-        return result || input;
+        return result;
     }
 
 };
