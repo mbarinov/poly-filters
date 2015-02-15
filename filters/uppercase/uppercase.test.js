@@ -19,7 +19,7 @@ describe('Uppercase test', function () {
 
     it('Incorrect input', function (done) {
         var el = document.querySelector('test-component');
-        el.setAttribute('value', 123);
+        el.value = 123;
 
         setTimeout(function () {
             parseInt(el.result).should.equal(123);
