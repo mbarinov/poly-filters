@@ -18,4 +18,4 @@ before_script:
 
 after_success:
   - istanbul cover _mocha -- -R spec ./filters/**/*.js
-  - codeclimate < ./coverage/lcov.info
+  - codeclimate < ./coverage/**/lcov.info
