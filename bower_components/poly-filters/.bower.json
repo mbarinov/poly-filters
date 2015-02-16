@@ -1,0 +1,29 @@
+{
+  "name": "poly-filters",
+  "homepage": "https://github.com/mbarinov/poly-filters",
+  "authors": [
+    "Maxim Barinov <barinovmaxim@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "Polymer/webcomponentsjs#^0.5",
+    "polymer": "Polymer/polymer#^0.5"
+  },
+  "_release": "3903ff9597",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3903ff9597a959fc3ce0341ed75dec45d45c97a3"
+  },
+  "_source": "git://github.com/mbarinov/poly-filters.git",
+  "_target": "*",
+  "_originalSource": "poly-filters",
+  "_direct": true
+}

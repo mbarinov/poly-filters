@@ -1,0 +1,28 @@
+{
+  "name": "poly-filters",
+  "version": "1.0.0",
+  "description": "Polymer filters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbarinov/poly-filters.git"
+  },
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run"
+  },
+  "author": "Maxim Barinov <barinovmaxim@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "graceful-fs": "3.0.5",
+    "karma": "0.12.31",
+    "karma-chrome-launcher": "0.1.7",
+    "karma-coverage": "^0.2.7",
+    "karma-mocha": "0.1.10",
+    "karma-phantomjs-launcher": "0.1.4",
+    "karma-should": "0.0.1",
+    "lcov-filter": "0.0.1",
+    "mocha": "2.1.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "4.6.5"
+  }
+}

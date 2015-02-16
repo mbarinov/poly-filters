@@ -1,0 +1,20 @@
+{
+  "name": "poly-filters",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mbarinov/poly-filters",
+  "authors": [
+    "Maxim Barinov <barinovmaxim@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "Polymer/webcomponentsjs#^0.5",
+    "polymer": "Polymer/polymer#^0.5"
+  }
+}

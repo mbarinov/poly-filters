@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Polymer expression</title>
+    <link rel="import" href="bower_components/polymer/polymer.html"/>
+    <link rel="import" href="polymer-expressions.html"/>
+    <link rel="import" href="test/test-component.html"/>
+</head>
+<body unresolved>
+
+<h1>Polymer Filters</h1>
+
+<h2>A collection of Polymer filters for formatting values of expressions.</h2>
+
+<template is="auto-binding">
+    <h2>Length expression</h2>
+    <span>{{ 'test' | length }}</span>
+</template>
+
+<test-component value="test"
+                result="{{result}}">
+    <span>{{ value | length }}</span>
+</test-component>
+
+</body>
+</html>
