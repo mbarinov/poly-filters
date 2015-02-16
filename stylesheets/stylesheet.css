@@ -125,6 +125,15 @@ a:hover {
   margin-bottom: 10px;
 }
 
+#welcome-wrapper a,#welcome-wrapper a:visited, #welcome-wrapper a:focus {
+  font-size: 32px;
+  text-decoration: none;
+}
+
+#welcome-wrapper a:hover {
+  color: deeppink;
+}
+
 #polymer-logo {
   width: 363px;
   height: 250px;
@@ -151,3 +160,38 @@ section .wrapper {
   margin: 42px;
 }
 
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-temc94');
+  src:url('fonts/icomoon.eot?#iefix-temc94') format('embedded-opentype'),
+  url('fonts/icomoon.woff?-temc94') format('woff'),
+  url('fonts/icomoon.ttf?-temc94') format('truetype'),
+  url('fonts/icomoon.svg?-temc94#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\eab1";
+}
+
+.personal {
+  display: block;
+  text-align: center;
+  margin-bottom: 42px;
+}
