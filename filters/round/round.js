@@ -1,6 +1,6 @@
 PolymerExpressions.prototype.round = function (input) {
-    if(typeof input === 'number') {
-        return input.toFixed(0);
+    if(!isNaN(Number(input))) {
+        return Number(input).toFixed(0);
     } else {
         return input;
     }
