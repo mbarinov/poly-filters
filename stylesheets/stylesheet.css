@@ -60,6 +60,7 @@ html, body {
 }
 
 section {
+  position: relative;
   display: flex;
   height: 100vh;
 }
@@ -163,11 +164,11 @@ section .wrapper {
 
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?-temc94');
-  src:url('fonts/icomoon.eot?#iefix-temc94') format('embedded-opentype'),
-  url('fonts/icomoon.woff?-temc94') format('woff'),
-  url('fonts/icomoon.ttf?-temc94') format('truetype'),
-  url('fonts/icomoon.svg?-temc94#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?-9jhosj');
+  src:url('fonts/icomoon.eot?#iefix-9jhosj') format('embedded-opentype'),
+  url('fonts/icomoon.woff?-9jhosj') format('woff'),
+  url('fonts/icomoon.ttf?-9jhosj') format('truetype'),
+  url('fonts/icomoon.svg?-9jhosj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -186,12 +187,31 @@ section .wrapper {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
+
 .icon-github:before {
   content: "\eab1";
 }
+
 
 .personal {
   display: block;
   text-align: center;
   margin-bottom: 42px;
+}
+
+.to-top {
+  position: absolute;
+  opacity: 1;
+  top: 24px;
+  left: 24px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.to-top a, .to-top a:focus, .to-top a:visited, .to-top a:hover {
+  cursor: pointer;
+  text-decoration: none;
 }

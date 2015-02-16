@@ -20,11 +20,17 @@
         <a href="https://github.com/mbarinov/poly-filters" title="Github repo">
             <i class="icon-github"></i>
         </a>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox"></div>
     </div>
 </section>
 
-<section id="downloads" class="clearfix">
-
+<section>
+    <div class="to-top">
+        <a href="#uppercase">
+            <i class="icon-arrow-up"></i>
+        </a>
+    </div>
     <div class="wrapper">
         <div class="buttons">
             <!-- Place this tag where you want the button to render. -->
@@ -242,20 +248,34 @@
         </div>
 
         <div class="buttons">
+            <div class="addthis_sharing_toolbox"></div>
             <!-- Place this tag where you want the button to render. -->
             <a class="github-button" href="https://github.com/mbarinov" data-style="mega"
                data-count-href="/mbarinov/followers" data-count-api="/users/mbarinov#followers">Follow @mbarinov</a>
 
         </div>
 
-        <a class="personal" href="http://mbarinov.github.io/">by Max Barinov</a>
+        <a class="personal" href="http://mbarinov.github.io/">by Max</a>
 
     </div>
 </section>
 <!-- Place this tag right after the last button or just before your close body tag. -->
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 <script>
+    document.addEventListener('scroll', function () {
+        var q = document.documentElement.scrollTop - document.documentElement.clientHeight;
+        var el = document.querySelector('.to-top');
+
+        if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
+            el.setAttribute('style', 'top:' + (q + 24) + 'px; opacity: 1');
+        } else {
+            el.setAttribute('style', 'top:24px; opacity: 0');
+        }
+
+    });
     console.log('Thanks for code review, I appreciate it. Also, you can hire me. http://mbarinov.github.io');
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e1d8cd021ddab5" async="async"></script>
 </body>
 </html>
