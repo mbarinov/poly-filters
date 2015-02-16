@@ -138,3 +138,12 @@ section .wrapper {
   margin: 42px 0;
 }
 
+.buttons {
+  display: flex;
+  flex-flow: row;
+  flex: 1 100%;
+  justify-content: space-around;
+
+  margin: 42px;
+}
+

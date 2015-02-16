@@ -23,6 +23,18 @@
 <section id="downloads" class="clearfix">
 
     <div class="wrapper">
+        <div class="buttons">
+            <!-- Place this tag where you want the button to render. -->
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/mbarinov/poly-filters" data-icon="octicon-git-branch"
+               data-style="mega" data-count-href="/mbarinov/poly-filters/network"
+               data-count-api="/repos/mbarinov/poly-filters#forks_count">Fork</a>
+            <!-- Place this tag where you want the button to render. -->
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/mbarinov/poly-filters" data-icon="octicon-star"
+               data-style="mega" data-count-href="/mbarinov/poly-filters/stargazers"
+               data-count-api="/repos/mbarinov/poly-filters#stargazers_count">Star</a>
+        </div>
         <h3>Filters:</h3>
         <ul>
             <li>
@@ -158,7 +170,8 @@
 
             <template is="auto-binding">
                 <div>
-                    <input class="poly-input" type="text" value="{{value}}" placeholder="http://mbarinov.github.io/poly-filters/">
+                    <input class="poly-input" type="text" value="{{value}}"
+                           placeholder="http://mbarinov.github.io/poly-filters/">
                 </div>
 
                 <span>> {{ value || 'http://mbarinov.github.io/poly-filters/' | link }}</span>
@@ -195,7 +208,8 @@
                 </div>
 
                 <div>Result:</div>
-                <template repeat="{{ d in [{name: 'Addy Osmani'},{name: 'Paul Irish'},{name: 'Ryan Dahl'},{name: 'Sara Chipps'}] | arrayFilter('name', value) }}">
+                <template
+                        repeat="{{ d in [{name: 'Addy Osmani'},{name: 'Paul Irish'},{name: 'Ryan Dahl'},{name: 'Sara Chipps'}] | arrayFilter('name', value) }}">
                     <div>{{d.name}}</div>
                 </template>
 
@@ -220,13 +234,14 @@
 
         </div>
 
-        <a href="https://github.com/mbarinov/polymer-filters/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-        <a href="https://github.com/mbarinov/polymer-filters/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-        <a href="https://github.com/mbarinov/polymer-filters" id="view-on-github"
-           class="button"><span>View on GitHub</span></a>
-
+        <div class="buttons">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/mbarinov" data-style="mega" data-count-href="/mbarinov/followers" data-count-api="/users/mbarinov#followers">Follow @mbarinov</a>
+        </div>
+        
     </div>
 </section>
-
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
