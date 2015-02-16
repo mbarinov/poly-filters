@@ -45,6 +45,10 @@ table {
 	border-spacing: 0;
 	border-collapse: collapse;
 }
+::selection {
+  color: #fff;
+  background-color: deeppink;
+}
 
 html, body {
   font-family: 'Roboto', sans-serif;
