@@ -10,7 +10,7 @@ PolymerExpressions.prototype.arrayFilter = function(input, prop, value, test) {
     }
 
     if(value === undefined || value === "") {
-        result = input;
+        return input;
     }
 
     if(test) {
