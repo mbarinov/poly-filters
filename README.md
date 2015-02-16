@@ -7,12 +7,22 @@
 <a href="https://codeclimate.com/github/mbarinov/poly-filters"><img src="https://codeclimate.com/github/mbarinov/poly-filters/badges/gpa.svg" /></a>
 <a href="https://codeclimate.com/github/mbarinov/poly-filters"><img src="https://codeclimate.com/github/mbarinov/poly-filters/badges/coverage.svg" /></a>
 
+
+
+## Getting started
+
 `bower install poly-filters`
+
+`<link rel="import" href="bower_components/poly-filters/poly-filters.html">`
+
+`{{ 'Hello world' | uppercase }}`
+
+`> HELLO WORLD`
+
 
 This library is a range of useful filters for Polymer expressions.
 
-`{{ 'Hello world' | uppercase }}`
-> HELLO WORLD`
+[Documentation](http://mbarinov.github.io/poly-filters/)
 
 ## Filters:
 
@@ -25,5 +35,3 @@ This library is a range of useful filters for Polymer expressions.
 * Parsing link
 * Date
 * Array filter
-
-[Documentation](http://mbarinov.github.io/poly-filters/)
