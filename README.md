@@ -8,6 +8,9 @@
 <a href="https://codeclimate.com/github/mbarinov/poly-filters"><img src="https://codeclimate.com/github/mbarinov/poly-filters/badges/coverage.svg" /></a>
 
 
+This library is a range of useful filters for Polymer expressions.
+
+[Documentation](http://mbarinov.github.io/poly-filters/)
 
 ## Getting started
 
@@ -18,11 +21,6 @@
 `{{ 'Hello world' | uppercase }}`
 
 `> HELLO WORLD`
-
-
-This library is a range of useful filters for Polymer expressions.
-
-[Documentation](http://mbarinov.github.io/poly-filters/)
 
 ## Filters:
 
