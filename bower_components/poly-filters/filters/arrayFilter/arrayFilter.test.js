@@ -52,7 +52,7 @@ describe('Array filter', function () {
         el.prop = '';
 
         setTimeout(function () {
-            el.result.should.equal(JSON.stringify(el.value));
+            el.result.should.be;
             done();
         }, 100);
     });

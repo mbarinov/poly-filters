@@ -16,11 +16,11 @@
     "webcomponentsjs": "Polymer/webcomponentsjs#^0.5",
     "polymer": "Polymer/polymer#^0.5"
   },
-  "_release": "3903ff9597",
+  "_release": "5db2987a00",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "3903ff9597a959fc3ce0341ed75dec45d45c97a3"
+    "commit": "5db2987a00e9d79dbdffdf2724259acf2a8e22fd"
   },
   "_source": "git://github.com/mbarinov/poly-filters.git",
   "_target": "*",
