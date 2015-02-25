@@ -31,4 +31,16 @@ describe('Lowercase filter', function () {
         }, 100);
     });
 
+    it('Input isn\'t string', function (done) {
+        var el = document.querySelector('test-component');
+        el.value = 420;
+        el.oldValue = 20;
+        el.newValue = 1991;
+
+        setTimeout(function() {
+            el.result.should.equal('420');
+            done();
+        }, 100);
+    });
+
 });
