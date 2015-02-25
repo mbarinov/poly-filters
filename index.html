@@ -68,6 +68,9 @@
                 <a href="#reverse">Reverse</a>
             </li>
             <li>
+                <a href="#replace">Replace</a>
+            </li>
+            <li>
                 <a href="#length">Length</a>
             </li>
             <li>
@@ -178,6 +181,22 @@
             </template>
 
             <pre>{{ value | reverse }}</pre>
+
+        </div>
+
+        <div class="filter-card" id="replace">
+
+            <h3>Replace</h3>
+
+            <template is="auto-binding">
+                <div>
+                    <input class="poly-input" type="text" value="{{value}}" placeholder="Hello World!">
+                </div>
+
+                <span>> {{ value || 'Hello World' | replace('World', 'Folks') }}</span>
+            </template>
+
+            <pre>{{ value | replace('World', 'Folks') }}</pre>
 
         </div>
 
