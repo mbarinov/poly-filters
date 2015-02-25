@@ -2,7 +2,7 @@
   "name": "poly-filters",
   "version": "0.1.0",
   "homepage": "https://github.com/mbarinov/poly-filters",
-  "keyword" : ["web-components", "polymer", "filters", "polymer expressions"],
+  "keywords" : ["web-components", "polymer", "filters", "polymer expressions"],
   "authors": [
     "Maxim Barinov <barinovmaxim@gmail.com>"
   ],
