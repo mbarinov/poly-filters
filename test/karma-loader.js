@@ -1,17 +1,18 @@
 'use strict';
 mocha.setup('bdd');
 
-window.__karma__.loaded = function () {};
+window.__karma__.loaded = function () {
+};
 
 window.addEventListener('polymer-ready', function run() {
     window.__karma__.start();
     window.removeEventListener('polymer-ready', run);
 });
 
-window.initTemplate = function(template) {
+window.initTemplate = function (template) {
     var wrapper = document.querySelector('#test');
 
-    if(wrapper) {
+    if (wrapper) {
         wrapper.parentNode.removeChild(wrapper);
     }
 
@@ -25,4 +26,17 @@ window.initTemplate = function(template) {
     document.body.appendChild(el);
 
     return el;
+};
+
+window.testWrapper = function (params, cb, done) {
+    var el = document.querySelector('test-component');
+
+    Object.keys(params).forEach(function (key) {
+        el[key] = params[key];
+    });
+
+    setTimeout(function() {
+        cb(el);
+        done();
+    }, 100);
 };
