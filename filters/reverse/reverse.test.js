@@ -7,14 +7,11 @@ describe('Reverse test', function () {
         done();
     });
 
-    it('Correct uppercase', function (done) {
-        var el = document.querySelector('test-component');
-        el.setAttribute('value', 'max');
-
-        setTimeout(function () {
+    it('Correct reverse', function (done) {
+        testWrapper({
+            value: 'max'
+        },function (el) {
             el.result.should.equal('xam');
-            done();
-        }, 100);
+        }, done);
     });
-
 });
