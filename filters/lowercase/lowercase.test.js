@@ -8,23 +8,18 @@ describe('Lowercase filter', function () {
     });
 
     it('Correct lowercase', function (done) {
-        var el = document.querySelector('test-component');
-        el.setAttribute('value', 'PUTIN');
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'PUTIN'
+        },function (el) {
             el.result.should.equal('putin');
-            done();
-        }, 200);
+        }, done);
     });
 
     it('Number input', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 123;
-
-        setTimeout(function () {
-            parseInt(el.result).should.equal(123);
-            done();
-        }, 100);
+        testWrapper({
+            value: 123
+        },function (el) {
+            el.result.should.equal('123');
+        }, done);
     });
-
 });
