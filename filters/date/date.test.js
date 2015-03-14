@@ -8,81 +8,80 @@ describe('Date test', function () {
     });
 
     it('Correct length', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02'
+        },function (el) {
             el.result.should.equal('01/02/2012');
-            done();
-        }, 100);
+        }, done);
+
     });
 
 
     it('format test yyyy-MM-dd HH:mm:ss Z', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02 07:00';
-        el.format = 'yyyy-MM-dd HH:mm:ss Z';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02 07:00',
+            format: 'yyyy-MM-dd HH:mm:ss Z'
+        },function (el) {
             el.result.should.equal('2012-01-02 07:00:00 Z');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('short year format', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012';
-        el.format = 'yy';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012',
+            format: 'yy'
+        },function (el) {
             el.result.should.equal('12');
-            done();
-        }, 100);
+        }, done);
+
     });
 
     it('t format, am', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02 23:00';
-        el.format = 't';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02 23:00',
+            format: 't'
+        },function (el) {
             el.result.should.equal('pm');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('t format, pm', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02';
-        el.format = 't';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02',
+            format: 't'
+        },function (el) {
             el.result.should.equal('am');
-            done();
-        }, 100);
+        }, done);
+
+
     });
 
 
     it('hh format, pm', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02 23:00';
-        el.format = 'hh';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02 23:00',
+            format: 'hh'
+        },function (el) {
             el.result.should.equal('11');
-            done();
-        }, 100);
+        }, done);
+
     });
 
     it('hh format, 0:0', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = '2012-01-02 0:0';
-        el.format = 'hh';
 
-        setTimeout(function() {
+        testWrapper({
+            value: '2012-01-02 0:0',
+            format: 'hh'
+        },function (el) {
             el.result.should.equal('12');
-            done();
-        }, 100);
+        }, done);
+
     });
 
 });
