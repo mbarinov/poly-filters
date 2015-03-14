@@ -8,45 +8,29 @@ describe('Link', function () {
     });
 
     it('Default format (host)', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'https://news.layervault.com';
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'https://news.layervault.com'
+        },function (el) {
             el.result.should.equal('news.layervault.com');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('Domain format', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'https://news.layervault.com';
-        el.format = 'domain';
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'https://news.layervault.com',
+            format: 'domain'
+        },function (el) {
             el.result.should.equal('layervault.com');
-            done();
-        }, 100);
-    });
-
-    it('Default format (host)', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'https://news.layervault.com';
-
-        setTimeout(function () {
-            el.result.should.equal('news.layervault.com');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('Pathname', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'https://news.layervault.com/somelink';
-        el.format = 'pathname';
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'https://news.layervault.com/somelink',
+            format: 'pathname'
+        },function (el) {
             el.result.should.equal('/somelink');
-            done();
-        }, 100);
+        }, done);
     });
 
 });
