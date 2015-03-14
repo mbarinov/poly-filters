@@ -8,23 +8,19 @@ describe('Uppercase test', function () {
     });
 
     it('Correct uppercase', function (done) {
-        var el = document.querySelector('test-component');
-        el.setAttribute('value', 'Max Barinov');
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'Max Barinov'
+        },function (el) {
             el.result.should.equal('MAX BARINOV');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('Incorrect input', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 123;
-
-        setTimeout(function () {
-            parseInt(el.result).should.equal(123);
-            done();
-        }, 100);
+        testWrapper({
+            value: 123
+        },function (el) {
+            el.result.should.equal('123');
+        }, done);
     });
 
 });
