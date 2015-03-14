@@ -1,4 +1,4 @@
-CONTRIBUTING to Poly-filters.
+# CONTRIBUTING to Poly-filters.
 
 1. Create a new filter by analogy the length filter.
 2. Pay attention on the template initialization.
