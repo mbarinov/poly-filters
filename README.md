@@ -29,6 +29,7 @@ This library is a range of useful filters for Polymer expressions.
 * Trim
 * Round
 * Reverse
+* Replace
 * Length
 * Parsing link
 * Date
