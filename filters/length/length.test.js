@@ -8,23 +8,20 @@ describe('Length test', function () {
     });
 
     it('Correct length', function (done) {
-        var el = document.querySelector('test-component');
-
-        setTimeout(function() {
+        testWrapper(null, function (el) {
             parseInt(el.result).should.equal(4);
-            done();
-        }, 100);
+        }, done);
+
     });
 
     it('Wrong value', function(done) {
-        var el = document.querySelector('test-component');
 
-        el.value = '123123';
-
-        setTimeout(function() {
+        testWrapper({
+            value: '123123'
+        },function (el) {
             parseInt(el.result).should.not.equal(4);
-            done();
-        }, 100);
+        }, done);
+
 
     });
 

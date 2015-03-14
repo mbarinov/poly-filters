@@ -31,9 +31,11 @@ window.initTemplate = function (template) {
 window.testWrapper = function (params, cb, done) {
     var el = document.querySelector('test-component');
 
-    Object.keys(params).forEach(function (key) {
-        el[key] = params[key];
-    });
+    if(params) {
+        Object.keys(params).forEach(function (key) {
+            el[key] = params[key];
+        });
+    }
 
     setTimeout(function() {
         cb(el);
