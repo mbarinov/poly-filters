@@ -8,53 +8,53 @@ describe('Array filter', function () {
     });
 
     it('Search in array', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = [
-            {
-                name: 'Addy Osmani'
-            },
-            {
-                name: 'Paul Irish'
-            },
-            {
-                name: 'Ryan Dahl'
-            },
-            {
-                name: 'Sara Chipps'
-            }
-        ];
-        el.format = 'name';
-        el.prop = 'Paul Irish';
 
-        setTimeout(function () {
+        testWrapper({
+            value: [
+                {
+                    name: 'Addy Osmani'
+                },
+                {
+                    name: 'Paul Irish'
+                },
+                {
+                    name: 'Ryan Dahl'
+                },
+                {
+                    name: 'Sara Chipps'
+                }
+            ],
+            format: 'name',
+            prop: 'Paul Irish'
+        },function (el) {
             el.result.should.equal('[{"name":"Paul Irish"}]');
-            done();
-        }, 100);
+        }, done);
+
     });
 
     it('Empty value', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = [
-            {
-                name: 'Addy Osmani'
-            },
-            {
-                name: 'Paul Irish'
-            },
-            {
-                name: 'Ryan Dahl'
-            },
-            {
-                name: 'Sara Chipps'
-            }
-        ];
-        el.format = 'name';
-        el.prop = '';
-
-        setTimeout(function () {
+        testWrapper({
+            value: [
+                {
+                    name: 'Addy Osmani'
+                },
+                {
+                    name: 'Paul Irish'
+                },
+                {
+                    name: 'Ryan Dahl'
+                },
+                {
+                    name: 'Sara Chipps'
+                }
+            ],
+            format: 'name',
+            prop: ''
+        },function (el) {
             el.result.should.be;
-            done();
-        }, 100);
+        }, done);
+
+
     });
 
 

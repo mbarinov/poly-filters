@@ -8,33 +8,27 @@ describe('Round', function () {
     });
 
     it('Number round', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 146.123;
-
-        setTimeout(function () {
+        testWrapper({
+            value: 146.123
+        },function (el) {
             el.result.should.equal('146');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('Zero', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 0;
-
-        setTimeout(function () {
+        testWrapper({
+            value: 0
+        },function (el) {
             el.result.should.equal('0');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('String round', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'test';
-
-        setTimeout(function () {
+        testWrapper({
+            value: 'test'
+        },function (el) {
             el.result.should.equal('test');
-            done();
-        }, 100);
+        }, done);
     });
 
 });

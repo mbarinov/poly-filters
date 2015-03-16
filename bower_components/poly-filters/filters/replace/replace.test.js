@@ -8,39 +8,36 @@ describe('Lowercase filter', function () {
     });
 
     it('Correct String to replace', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'Hello World';
-        el.oldValue = 'World';
-        el.newValue = 'Folks!';
-
-        setTimeout(function() {
+        testWrapper({
+            value: 'Hello World',
+            oldValue: 'World',
+            newValue: 'Folks!'
+        },function (el) {
             el.result.should.equal('Hello Folks!');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('String undefined, not replaced', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 'Hello World';
-        el.oldValue = 'world';
-        el.newValue = 'Folks!';
-
-        setTimeout(function() {
+        testWrapper({
+            value: 'Hello World',
+            oldValue: 'world',
+            newValue: 'Folks!'
+        },function (el) {
             el.result.should.equal('Hello World');
-            done();
-        }, 100);
+        }, done);
+
     });
 
     it('Input isn\'t string', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 420;
-        el.oldValue = 20;
-        el.newValue = 1991;
 
-        setTimeout(function() {
+        testWrapper({
+            value: 420,
+            oldValue: 20,
+            newValue: 1991
+        },function (el) {
             el.result.should.equal('420');
-            done();
-        }, 100);
+        }, done);
+
     });
 
 });

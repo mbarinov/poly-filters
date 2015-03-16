@@ -8,23 +8,19 @@ describe('Trim test', function () {
     });
 
     it('Correct trim', function (done) {
-        var el = document.querySelector('test-component');
-        el.setAttribute('value', ' string ');
-
-        setTimeout(function () {
+        testWrapper({
+            value: ' string '
+        },function (el) {
             el.result.should.equal('string');
-            done();
-        }, 100);
+        }, done);
     });
 
     it('Incorrect input', function (done) {
-        var el = document.querySelector('test-component');
-        el.value = 123;
-
-        setTimeout(function () {
+        testWrapper({
+            value: 123
+        },function (el) {
             el.result.should.equal('123');
-            done();
-        }, 100);
+        }, done);
     });
 
 });
